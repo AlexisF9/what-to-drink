@@ -1,0 +1,46 @@
+.random {
+  max-width: 90%;
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  button {
+    margin-bottom: 3rem;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .infos {
+    width: 100%;
+    display: flex;
+
+    img {
+      max-width: 300px;
+      margin-right: 1rem;
+    }
+
+    div {
+      h4 {
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .ingredients {
+    h4 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    ul li {
+      list-style: none;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
