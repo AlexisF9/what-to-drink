@@ -22,11 +22,13 @@ export function Random() {
     const recipe = await res.json();
     setCocktails(recipe);
   }
+
   return (
     <main className={css.random}>
       <div className={css.filter}>
         <button onClick={random}>Refresh</button>
       </div>
+
       {cocktails && (
         <div className={css.cocktails}>
           <h3>{cocktails.drinks[0].strDrink}</h3>
