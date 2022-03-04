@@ -9,8 +9,8 @@ export function Header(props) {
           <h1>What to drink ?</h1>
         </a>
       </Link>
-      <Link href={props.lienRandom}>
-        <a>Random</a>
+      <Link href={props.searchDrink}>
+        <a>Search drink</a>
       </Link>
     </main>
   );
