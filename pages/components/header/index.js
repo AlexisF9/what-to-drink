@@ -10,7 +10,7 @@ export function Header(props) {
         </a>
       </Link>
       <Link href={props.searchDrink}>
-        <a>Search drink</a>
+        <a>Random drink</a>
       </Link>
     </main>
   );

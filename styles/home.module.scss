@@ -1,2 +1,60 @@
+@import "variables";
 
+.content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.search {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    input {
+        width: 400px;
+        padding: 0.8rem;
+        border-radius: 5px;
+    }
+
+    button {
+        margin-left: 1rem;
+        border-radius: 5px;
+    }
+}
+
+.cardItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    width: 100%;
+    
+    .items {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 10px;
+
+        .overlay {
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.63);
+        }
+
+        h3 {
+            position: absolute;
+            color: $white;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -4,28 +4,24 @@
   margin-top: 2rem;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
   display: flex;
-
-  .filter {
-    background-color: $primary;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    padding: 1rem;
-    border-radius: 10px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-
-    button {
-      height: fit-content;
-    }
-  }
+  flex-direction: column;
+  align-items: center;
 
   .cocktails {
     background-color: $primary;
     width: 70%;
     padding: 2rem;
     border-radius: 10px;
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0 5px 0 5px;
+    }
   }
 
   h3 {
