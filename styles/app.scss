@@ -10,7 +10,7 @@ body {
 button {
   border: 0;
   color: black;
-  background-color: coral;
+  background-color: #fdcb9e;
   padding: 1rem 1.5rem;
   cursor: pointer;
   border-radius: 5px;
@@ -18,4 +18,8 @@ button {
 
 img {
   border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
 }

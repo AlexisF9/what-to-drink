@@ -2,7 +2,6 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import styles from "../styles/home.module.scss";
 import { Header } from "./components/header";
-import { Random } from "./components/random";
 
 export default function Home() {
   return (
@@ -13,8 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <Random />
+      <Header lienRandom="/random" />
     </div>
   );
 }
