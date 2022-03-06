@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Header } from '../components/header'
 import css from './index.module.scss'
+import { Footer } from "../components/footer";
 
 export function Item({cocktails}) {
     
@@ -10,19 +11,19 @@ export function Item({cocktails}) {
             <div className={css.item}>
                 <h3>{cocktails.drinks[0].strDrink}</h3>
                 <div className={css.infos}>
-                <img src={cocktails.drinks[0].strDrinkThumb} />
-                <div>
-                    <p>
-                    <span>Category : </span>
-                    {cocktails.drinks[0].strCategory}
-                    </p>
-                    <p>
-                    <span>Type : </span>
-                    {cocktails.drinks[0].strAlcoholic}
-                    </p>
-                    <h4>Instructions :</h4>
-                    <p>{cocktails.drinks[0].strInstructions}</p>
-                </div>
+                    <img src={cocktails.drinks[0].strDrinkThumb} />
+                    <div>
+                        <p>
+                        <span>Category : </span>
+                        {cocktails.drinks[0].strCategory}
+                        </p>
+                        <p>
+                        <span>Type : </span>
+                        {cocktails.drinks[0].strAlcoholic}
+                        </p>
+                        <h4>Instructions :</h4>
+                        <p>{cocktails.drinks[0].strInstructions}</p>
+                    </div>
                 </div>
                 <div className={css.ingredients}>
                 <h4>Ingredients :</h4>
@@ -135,7 +136,7 @@ export function Item({cocktails}) {
                 </ul>
                 </div>
             </div>
-            
+            <Footer/>
         </main>
     )
 }

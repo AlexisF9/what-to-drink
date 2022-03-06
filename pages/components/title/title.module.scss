@@ -25,5 +25,11 @@
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    @include mobile {
+      font-size: 20px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 }
