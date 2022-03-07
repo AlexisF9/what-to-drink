@@ -2,9 +2,9 @@ import Head from "next/head";
 import Link from "next/link";
 import { createRef, useEffect, useState } from "react";
 import css from "../styles/home.module.scss";
-import { Footer } from "./components/footer";
-import { Header } from "./components/header";
-import { Title } from "./components/title";
+import { Header } from "../components/header";
+import { Footer } from "../components/footer";
+import { Title } from "../components/title";
 
 export default function Home() {
 

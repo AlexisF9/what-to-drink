@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import { Header } from '../components/header'
+import { Header } from '../../components/header'
 import css from './index.module.scss'
-import { Footer } from "../components/footer";
+import { Footer } from "../../components/footer";
 
 export function Item({cocktails}) {
     

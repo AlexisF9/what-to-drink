@@ -1,8 +1,8 @@
-import { Header } from "../components/header";
-import { Title } from "../components/title";
+import { Header } from "../../components/header";
+import { Title } from "../../components/title";
 import css from "./random.module.scss";
 import { useEffect, useState } from "react";
-import { Footer } from "../components/footer";
+import { Footer } from "../../components/footer";
 
 export default function Random() {
   const [cocktails, setCocktails] = useState();
