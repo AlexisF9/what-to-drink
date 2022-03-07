@@ -9,6 +9,10 @@
   justify-content: center;
   align-items: center;
 
+  @include mobile {
+    height: 50px;
+  }
+
   a {
       color: $tertiary;
   }
