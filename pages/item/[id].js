@@ -11,7 +11,7 @@ export function Item({cocktails}) {
             <div className={css.item}>
                 <h3>{cocktails.drinks[0].strDrink}</h3>
                 <div className={css.infos}>
-                    <img src={cocktails.drinks[0].strDrinkThumb} />
+                    <img src={cocktails.drinks[0].strDrinkThumb} alt={cocktails.drinks[0].strDrink} />
                     <div>
                         <p>
                         <span>Category : </span>

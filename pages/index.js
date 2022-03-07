@@ -55,7 +55,7 @@ export default function Home() {
                   <a  className={css.items}>
                     <div className={css.overlay}></div>
                     <h3 key={index}>{drink.strDrink}</h3>
-                    <img src={drink.strDrinkThumb}/>
+                    <img src={drink.strDrinkThumb} alt={drink.strDrink}/>
                   </a>
                 </Link>
               )
