@@ -51,7 +51,7 @@ export default function Home() {
         <div className={css.cardItems}>
           {items?.drinks?.map((drink, index) => {
               return (
-                <Link href={`/item/${drink.idDrink}`}>
+                <Link href={`/item/${drink.idDrink}`} key={index}>
                   <a  className={css.items}>
                     <div className={css.overlay}></div>
                     <h3 key={index}>{drink.strDrink}</h3>
