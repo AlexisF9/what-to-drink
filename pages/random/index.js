@@ -1,8 +1,8 @@
-import { Header } from "../../components/header";
-import { Title } from "../../components/title";
 import css from "./random.module.scss";
 import { useEffect, useState } from "react";
+import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
+import { Title } from "../../components/title";
 
 export default function Random() {
   const [cocktails, setCocktails] = useState();
@@ -28,8 +28,8 @@ export default function Random() {
 
   return (
     <>
-      <Header searchDrink="/random" allIngredients="/ingredients" />
-      <Title title="Find a random drink" urlImg="/titleRandom.jpg" />
+    <Header searchDrink="/random" allIngredients="/ingredients" category="/category"/>
+    <Title title="Find a random drink" urlImg="/titleRandom.jpg"/>
       <main className={css.random}>
       <div className={css.cocktails}>
         <button onClick={random}>Refresh</button>

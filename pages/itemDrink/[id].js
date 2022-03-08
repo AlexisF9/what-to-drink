@@ -6,7 +6,7 @@ export function ItemDrink({cocktails}) {
     
     return (
         <main>
-            <Header searchDrink="/random" allIngredients="/ingredients"/>
+            <Header searchDrink="/random" allIngredients="/ingredients" category="/category"/>
             <div className={css.item}>
                 <h3>{cocktails.drinks[0].strDrink}</h3>
                 <div className={css.infos}>

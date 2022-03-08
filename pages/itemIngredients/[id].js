@@ -1,14 +1,13 @@
 import { Header } from '../../components/header'
 import css from './index.module.scss'
 import { Footer } from "../../components/footer";
-import { useEffect, useState } from "react";
 import Link from 'next/link';
 
 export function ItemIngredients({ingre, listCocktails}) {
     
     return (
         <>
-            <Header searchDrink="/random" allIngredients="/ingredients"/>
+            <Header searchDrink="/random" allIngredients="/ingredients" category="/category"/>
             <main className={css.ingreInfos}>
 
                 <h2>{ingre.ingredients[0].strIngredient}</h2>

@@ -1,0 +1,51 @@
+@import "styles/variables";
+
+.allCategory {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: grid;
+    grid-gap: 20px;
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    @include smallMobile {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+    }
+
+    li {
+        width: 100%;
+        background-color: $primary;
+        padding: 20px;
+        border-radius: 5px;
+        color: black;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $tertiary;
+        }
+    }
+}
