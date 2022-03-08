@@ -65,6 +65,11 @@
     
             h3 {
                 color: $white;
+                text-align: center;
+                
+                @include mobile {
+                    font-size: 14px;
+                }
             }
     
             img {
