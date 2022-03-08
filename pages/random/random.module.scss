@@ -32,6 +32,10 @@
   h3 {
     text-transform: uppercase;
     margin-bottom: 0.5rem;
+
+    @include mobile {
+      margin-top: 2rem;
+    }
   }
 
   .infos {

@@ -23,7 +23,7 @@ export default function Ingredients() {
     return (
         <>
             <Header searchDrink="/random" allIngredients="/ingredients"/>
-            <Title title="Search drinks by ingredients" urlImg="/titleRandom.jpg"/>
+            <Title title="Search drinks by ingredients" urlImg="/titleIngredients.jpg"/>
             <main className={css.allIngredients}>
                 {ingredients?.drinks?.map((ingre, index) => {
                     return (

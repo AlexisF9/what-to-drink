@@ -11,7 +11,7 @@ export function ItemIngredients({ingre, listCocktails}) {
             <Header searchDrink="/random" allIngredients="/ingredients"/>
             <main className={css.ingreInfos}>
 
-                <h3>{ingre.ingredients[0].strIngredient}</h3>
+                <h2>{ingre.ingredients[0].strIngredient}</h2>
 
                 <div className={css.listeCocktails}>
                     {listCocktails?.drinks?.map((cocktails, index) => {
