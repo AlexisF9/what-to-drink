@@ -1,13 +1,12 @@
-import Link from 'next/link'
 import { Header } from '../../components/header'
 import css from './index.module.scss'
 import { Footer } from "../../components/footer";
 
-export function Item({cocktails}) {
+export function ItemDrink({cocktails}) {
     
     return (
         <main>
-            <Header searchDrink="/random"/>
+            <Header searchDrink="/random" allIngredients="/ingredients"/>
             <div className={css.item}>
                 <h3>{cocktails.drinks[0].strDrink}</h3>
                 <div className={css.infos}>
@@ -159,4 +158,4 @@ export async function getStaticPaths() { // liste les (routes) pages à l'avance
     }
 }
 
-export default Item
+export default ItemDrink

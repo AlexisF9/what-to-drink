@@ -9,9 +9,14 @@ export function Header(props) {
           <h1>What to drink ?</h1>
         </a>
       </Link>
-      <Link href={props.searchDrink}>
-        <a>Random drink</a>
-      </Link>
+      <div className={css.linkHeader}>
+        <Link href={props.searchDrink}>
+          <a>Random drink</a>
+        </Link>
+        <Link href={props.allIngredients}>
+          <a>All ingredients</a>
+        </Link>
+      </div>
     </main>
   );
 }

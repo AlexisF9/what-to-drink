@@ -28,7 +28,7 @@ export default function Random() {
 
   return (
     <>
-      <Header searchDrink="/random" />
+      <Header searchDrink="/random" allIngredients="/ingredients" />
       <Title title="Find a random drink" urlImg="/titleRandom.jpg" />
       <main className={css.random}>
       <div className={css.cocktails}>

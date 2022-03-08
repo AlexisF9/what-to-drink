@@ -1,0 +1,59 @@
+import { Header } from '../../components/header'
+import css from './index.module.scss'
+import { Footer } from "../../components/footer";
+import { useEffect, useState } from "react";
+import Link from 'next/link';
+
+export function ItemIngredients({ingre, listCocktails}) {
+    
+    return (
+        <>
+            <Header searchDrink="/random" allIngredients="/ingredients"/>
+            <main className={css.ingreInfos}>
+
+                <h3>{ingre.ingredients[0].strIngredient}</h3>
+
+                <div className={css.listeCocktails}>
+                    {listCocktails?.drinks?.map((cocktails, index) => {
+                        return (
+                            <Link href={`/itemDrink/${cocktails.idDrink}`} key={index}>
+                                <a className={css.items}>
+                                    <div className={css.overlay}></div>
+                                    <h3>{cocktails.strDrink}</h3>
+                                    <img src={cocktails.strDrinkThumb} alt={cocktails.strDrink}/>
+                                </a>
+                            </Link>
+                        )
+                    })}
+                </div>
+            </main>
+                
+            <Footer/>
+        </>
+    )
+
+};
+
+export async function getStaticProps({params}) { 
+    const ingreInfos = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${params.id}`)
+    const ingre = await ingreInfos.json()
+
+    const list = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${params.id}`)
+    const listCocktails = await list.json()
+    
+    return {
+        props: { 
+            ingre,
+            listCocktails
+        }
+    }
+}
+
+export async function getStaticPaths() { // liste les (routes) pages à l'avance
+    return {
+        paths: [],
+        fallback: 'blocking', // met la page 404
+    }
+}
+
+export default ItemIngredients
