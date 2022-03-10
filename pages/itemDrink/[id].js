@@ -1,6 +1,7 @@
 import { Header } from '../../components/header'
 import css from './index.module.scss'
 import { Footer } from "../../components/footer";
+import Link from "next/link";
 
 export function ItemDrink({cocktails}) {
     
@@ -29,105 +30,165 @@ export function ItemDrink({cocktails}) {
                 <ul>
                     {cocktails.drinks[0].strIngredient1 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient1}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient1}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient1}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure1 &&
                         " : " + cocktails.drinks[0].strMeasure1}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient2 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient2}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient2}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient2}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure2 &&
                         " : " + cocktails.drinks[0].strMeasure2}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient3 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient3}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient3}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient3}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure3 &&
                         " : " + cocktails.drinks[0].strMeasure3}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient4 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient4}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient4}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient4}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure4 &&
                         " : " + cocktails.drinks[0].strMeasure4}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient5 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient5}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient5}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient5}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure5 &&
                         " : " + cocktails.drinks[0].strMeasure5}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient6 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient6}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient6}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient6}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure6 &&
                         " : " + cocktails.drinks[0].strMeasure6}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient7 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient7}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient7}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient7}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure7 &&
                         " : " + cocktails.drinks[0].strMeasure7}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient8 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient8}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient8}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient8}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure8 &&
                         " : " + cocktails.drinks[0].strMeasure8}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient9 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient9}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient9}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient9}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure9 &&
                         " : " + cocktails.drinks[0].strMeasure9}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient10 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient10}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient10}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient10}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure10 &&
                         " : " + cocktails.drinks[0].strMeasure10}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient11 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient11}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient11}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient11}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure11 &&
                         " : " + cocktails.drinks[0].strMeasure11}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient12 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient12}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient12}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient12}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure12 &&
                         " : " + cocktails.drinks[0].strMeasure12}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient13 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient13}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient13}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient13}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure13 &&
                         " : " + cocktails.drinks[0].strMeasure13}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient14 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient14}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient14}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient14}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure14 &&
                         " : " + cocktails.drinks[0].strMeasure14}
                     </li>
                     )}
                     {cocktails.drinks[0].strIngredient15 && (
                     <li>
-                        {cocktails.drinks[0].strIngredient15}
+                        <Link href={`/itemIngredients/${cocktails.drinks[0].strIngredient15}`}>
+                            <a>
+                                {cocktails.drinks[0].strIngredient15}
+                            </a>
+                        </Link>
                         {cocktails.drinks[0].strMeasure15 &&
                         " : " + cocktails.drinks[0].strMeasure15}
                     </li>

@@ -81,9 +81,14 @@
         margin-top: 0;
       }
     }
+
     ul li {
       list-style: none;
       margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: $tertiary;
     }
   }
 }
