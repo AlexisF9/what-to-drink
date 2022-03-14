@@ -1,6 +1,5 @@
 import { Header } from "../../components/header";
 import css from "./index.module.scss";
-import { Footer } from "../../components/footer";
 import Link from "next/link";
 
 export function ItemDrink({ cocktails }) {
@@ -202,7 +201,6 @@ export function ItemDrink({ cocktails }) {
           </ul>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }

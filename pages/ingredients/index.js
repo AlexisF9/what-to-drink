@@ -1,7 +1,6 @@
 import { Header } from "../../components/header";
 import { Title } from "../../components/title";
 import css from "./ingredients.module.scss";
-import { Footer } from "../../components/footer";
 import { useState } from "react";
 import Link from "next/link";
 import { createRef } from "react/cjs/react.production.min";
@@ -46,7 +45,6 @@ export default function Ingredients({ ingre }) {
           })}
         </div>
       </main>
-      <Footer />
     </>
   );
 }

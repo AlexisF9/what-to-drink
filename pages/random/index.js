@@ -1,7 +1,6 @@
 import css from "./random.module.scss";
 import { useEffect, useState } from "react";
 import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
 import { Title } from "../../components/title";
 import Link from "next/link";
 
@@ -233,7 +232,6 @@ export default function Random() {
           )}
         </div>
       </main>
-      <Footer />
     </>
   );
 }
