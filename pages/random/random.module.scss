@@ -22,10 +22,10 @@
     }
 
     button {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border-radius: 0 5px 0 5px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 0 5px 0 5px;
     }
   }
 
@@ -58,15 +58,10 @@
     div {
       h4 {
         margin-bottom: 0.5rem;
-        color: $tertiary;
       }
 
       p {
         margin-bottom: 1.5rem;
-
-        span {
-          color: $tertiary;
-        }
       }
     }
   }
@@ -75,7 +70,6 @@
     h4 {
       margin-top: 1rem;
       margin-bottom: 1rem;
-      color: $tertiary;
 
       @include mobile {
         margin-top: 0;

@@ -1,78 +1,76 @@
 @import "styles/variables";
 
 .item {
-    background-color: $primary;
-    width: 70%;
-    padding: 2rem;
-    border-radius: 10px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  background-color: $primary;
+  width: 70%;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
-    @include tablet {
-      width: 90%;
-    }
+  @include tablet {
+    width: 90%;
+  }
 
-    button {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border-radius: 0 5px 0 5px;
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 5px 0 5px;
+  }
+}
+
+.infos {
+  width: 100%;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 300px;
+    margin-right: 1rem;
+
+    @include mobile {
+      margin-bottom: 1rem;
     }
   }
 
-.infos {
-    width: 100%;
-    display: flex;
-
-    @include mobile {
-      flex-direction: column;
-    }
-
-    img {
-      max-width: 300px;
-      margin-right: 1rem;
-
-      @include mobile {
-        margin-bottom: 1rem;
-      }
-    }
-
-    div {
-      h4 {
-        margin-bottom: 0.5rem;
-        color: $tertiary;
-      }
-
-        p {
-        margin-bottom: 1.5rem;
-
-        span {
-          color: $tertiary;
-        }
-      }
-    }
-}
-
-.ingredients {
+  div {
     h4 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      color: $tertiary;
-
-      @include mobile {
-        margin-top: 0;
-      }
-    }
-
-    ul li {
-      list-style: none;
       margin-bottom: 0.5rem;
     }
 
-    a {
-      color: $tertiary;
+    p {
+      margin-bottom: 1.5rem;
     }
+  }
+}
+
+.ingredients {
+  h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @include mobile {
+      margin-top: 0;
+    }
+  }
+
+  ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: $tertiary;
+  }
 }
