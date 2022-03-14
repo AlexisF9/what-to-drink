@@ -62,6 +62,13 @@ export function Header(props) {
               <a>Ingredients</a>
             </Link>
           </div>
+
+          <p className={css.copyright}>
+            Site réalise par{" "}
+            <Link href="https://www.alexisflacher.fr/">
+              <a target="_blank">Alexis Flacher</a>
+            </Link>
+          </p>
         </div>
       </main>
       <div className={css.overlay} ref={overlay} onClick={closeMenu}></div>

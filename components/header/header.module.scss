@@ -81,14 +81,32 @@
 
       a {
         color: $dark;
-        font-size: 20px;
+        font-size: 30px;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         transition: color 0.3s;
+        font-family: "Italiana", serif;
+        text-transform: uppercase;
 
         &:hover {
           color: $tertiary;
         }
+      }
+    }
+
+    .copyright {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      font-size: 12px;
+
+      @include mobile {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      a {
+        color: $tertiary;
       }
     }
   }
