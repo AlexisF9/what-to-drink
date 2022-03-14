@@ -42,7 +42,7 @@ export function Header(props) {
               x2="25"
               y2="1"
               stroke="black"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <line
               x1="1"
@@ -50,7 +50,7 @@ export function Header(props) {
               x2="25"
               y2="25"
               stroke="black"
-              stroke-width="2"
+              strokeWidth="2"
             />
           </svg>
 
