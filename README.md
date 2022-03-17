@@ -1,6 +1,6 @@
 NextJS, ReactJS, SCSS/SASS
 
-## Getting Started
+## Start le projet
 
 - git clone...
 - npm i
