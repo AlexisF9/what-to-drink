@@ -20,7 +20,9 @@ export function ItemDrink({ cocktails }) {
           <div>
             <p>
               <span>Category : </span>
-              {cocktails.drinks[0].strCategory}
+              <Link href={`/itemCategory/${cocktails.drinks[0].strCategory}`}>
+                <a>{cocktails.drinks[0].strCategory}</a>
+              </Link>
             </p>
             <p>
               <span>Type : </span>

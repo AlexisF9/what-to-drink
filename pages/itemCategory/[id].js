@@ -2,7 +2,7 @@ import { Header } from "../../components/header";
 import css from "./index.module.scss";
 import Link from "next/link";
 
-export function ItemIngredients({ ingre, listCocktails }) {
+export function ItemCategory({ category, name }) {
   return (
     <>
       <Header
@@ -10,10 +10,10 @@ export function ItemIngredients({ ingre, listCocktails }) {
         allIngredients="/ingredients"
         category="/category"
       />
-      <main className={css.ingreInfos}>
-        <h2>{ingre.ingredients[0].strIngredient}</h2>
+      <main className={css.cateInfos}>
+        <h2>{name}</h2>
         <div className={css.listeCocktails}>
-          {listCocktails?.drinks?.map((cocktails, index) => {
+          {category?.drinks?.map((cocktails, index) => {
             return (
               <Link href={`/itemDrink/${cocktails.idDrink}`} key={index}>
                 <a className={css.items}>
@@ -31,30 +31,26 @@ export function ItemIngredients({ ingre, listCocktails }) {
 }
 
 export async function getStaticProps({ params }) {
-  const ingreInfos = await fetch(
-    `https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${params.id}`
+  const cateInfos = await fetch(
+    `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${params.id}`
   );
-  const ingre = await ingreInfos.json();
+  const category = await cateInfos.json();
 
-  const list = await fetch(
-    `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${params.id}`
-  );
-  const listCocktails = await list.json();
+  const name = params.id;
 
   return {
     props: {
-      ingre,
-      listCocktails,
+      category,
+      name,
     },
   };
 }
 
 export async function getStaticPaths() {
-  // liste les (routes) pages à l'avance
   return {
     paths: [],
-    fallback: "blocking", // met la page 404
+    fallback: "blocking",
   };
 }
 
-export default ItemIngredients;
+export default ItemCategory;

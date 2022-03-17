@@ -1,114 +1,58 @@
 @import "variables";
 
 .content {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search {
-    display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  input {
+    width: 400px;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 2px solid $dark;
+    transition: width 0.5s;
 
     @include mobile {
-        flex-direction: column;
+      width: 90%;
     }
 
-    input {
-        width: 400px;
-        padding: 0.8rem;
-        border-radius: 5px;
-        border: 2px solid $dark;
-        transition: width 0.5s;
-
-        @include mobile {
-            width: 90%;
-        }
-
-        &:hover {
-            width: 420px;
-            @include mobile {
-                width: 90%;
-            }
-        }
+    &:hover {
+      width: 420px;
+      @include mobile {
+        width: 90%;
+      }
     }
+  }
 
-    button {
-        margin-left: 1rem;
-        border-radius: 5px;
+  button {
+    margin-left: 1rem;
+    border-radius: 5px;
 
-        @include mobile {
-            margin: 0;
-            width: fit-content;
-            margin-top: 1rem;
-        }
+    @include mobile {
+      margin: 0;
+      width: fit-content;
+      margin-top: 1rem;
     }
+  }
 }
 
 .cardItems {
-    display: grid;
-    grid-gap: 40px;
-    width: 100%;
-    margin-bottom: 5rem;
+  width: 100%;
+  margin-bottom: 5rem;
 
-    @include desktop {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+  @include largeGrille;
 
-    @include tablet {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
-    }
-
-    @include mobile {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 15px;
-    }
-    
-    .items {
-        width: 100%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        border-radius: 10px;
-        cursor: pointer;
-
-        &:hover {
-            .overlay, h3 {
-                opacity: 0;
-                pointer-events: none;
-            }
-        }
-
-        .overlay, h3 {
-            position: absolute;
-            opacity: 1;
-            transition: opacity 0.5s;
-        }
-
-        .overlay {
-            border-radius: 10px;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.452);
-        }
-
-        h3 {
-            color: $white;
-            text-align: center;
-
-            @include mobile {
-                font-size: 14px;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
-    }
+  .items {
+    @include items;
+  }
 }

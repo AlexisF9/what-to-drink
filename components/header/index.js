@@ -58,6 +58,9 @@ export function Header(props) {
             <Link href={props.searchDrink}>
               <a>Random</a>
             </Link>
+            <Link href={props.category}>
+              <a>Category</a>
+            </Link>
             <Link href={props.allIngredients}>
               <a>Ingredients</a>
             </Link>
