@@ -16,7 +16,10 @@ export default function Category({ categories }) {
       <main className={css.allCategories}>
         {categories.drinks.map((cate, index) => {
           return (
-            <Link href={`/itemCategory/${cate.strCategory}`} key={index}>
+            <Link
+              href={`/itemCategory/${encodeURIComponent(cate.strCategory)}`}
+              key={index}
+            >
               <a>
                 <p>{cate.strCategory}</p>
               </a>
